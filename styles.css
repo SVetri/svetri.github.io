@@ -40,6 +40,7 @@ body{
 .header.center-title {justify-content:center}
 .header.center-title .site-title {text-align:center}
 .header.center-title .brand {justify-content:center}
+.header.center-title .site-desc {text-align:center;margin-left:0;margin-right:0}
 .brand{
   display:flex;
   align-items:center;
@@ -50,7 +51,7 @@ body{
   display:flex;align-items:center;justify-content:center;color:var(--bg);font-weight:700
 }
 .site-title{font-size:1.25rem;margin:0}
-.site-desc{color:var(--muted);font-size:0.9rem;margin:0}
+.site-desc{color:var(--muted);font-size:0.95rem;margin:4px 0 0}
 .hero{
   margin-top:28px;
   padding:28px;
@@ -60,8 +61,10 @@ body{
 .hero h1{margin:0;font-size:2rem}
 .hero p{color:var(--muted);margin-top:8px}
 .posts{margin-top:24px;display:grid;gap:12px}
-.post{padding:16px;border-radius:8px;border:1px solid rgba(0,0,0,0.05);background:transparent}
-.post a{color:var(--text);text-decoration:none;font-weight:600}
+.post{padding:0;border-radius:8px;background:transparent}
+.post-link{display:block;padding:16px;border-radius:8px;border:1px solid rgba(0,0,0,0.05);text-decoration:none;color:inherit;background:transparent;transition:box-shadow .15s ease,transform .12s ease}
+.post-link:hover{box-shadow:0 6px 18px rgba(2,6,23,0.08);transform:translateY(-2px)}
+.post-title{font-weight:600;color:var(--text)}
 .post-meta{color:var(--muted);font-size:0.9rem;margin-top:6px}
 .footer{margin:48px 0 24px;color:var(--muted);font-size:0.9rem}
 
